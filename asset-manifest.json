@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/shortly/static/css/main.adb49746.chunk.css",
+    "main.js": "/shortly/static/js/main.33686044.chunk.js",
+    "main.js.map": "/shortly/static/js/main.33686044.chunk.js.map",
+    "runtime-main.js": "/shortly/static/js/runtime-main.4061ed73.js",
+    "runtime-main.js.map": "/shortly/static/js/runtime-main.4061ed73.js.map",
+    "static/js/2.f77344ed.chunk.js": "/shortly/static/js/2.f77344ed.chunk.js",
+    "static/js/2.f77344ed.chunk.js.map": "/shortly/static/js/2.f77344ed.chunk.js.map",
+    "index.html": "/shortly/index.html",
+    "static/css/main.adb49746.chunk.css.map": "/shortly/static/css/main.adb49746.chunk.css.map",
+    "static/js/2.f77344ed.chunk.js.LICENSE.txt": "/shortly/static/js/2.f77344ed.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/shortly/static/media/bg-boost-mobile.4b04bd89.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4061ed73.js",
+    "static/js/2.f77344ed.chunk.js",
+    "static/css/main.adb49746.chunk.css",
+    "static/js/main.33686044.chunk.js"
+  ]
+}
