@@ -1,0 +1,31 @@
+.boost-container {
+    height: 250px;
+    background-color: $dark-violet;
+    background-image: url("../Assets/bg-boost-mobile.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        background-image: url("../Assets/bg-boost-desktop.svg");
+    }
+
+
+    h2 {
+        color: $white;
+        font-weight: $fw-bold;
+        font-size: 27px;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+
+        @media (min-width: 768px) {
+            font-size: 35px;
+            letter-spacing: 2px;
+        }
+    }
+}

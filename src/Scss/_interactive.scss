@@ -1,0 +1,289 @@
+.interactive-container-form {
+    width: 100%;
+    position: absolute;
+    top: -100px;
+
+    @media (min-width: 768px) {
+        top: -80px;
+    }
+
+
+    // ========================= Container
+    .form-container {
+        background-color: $dark-violet;
+        height: 210px;
+        background-image: url("../Assets/bg-boost-mobile.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1.5rem;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        @media (min-width: 768px) {
+            height: 160px;
+            background-image: url("../Assets/bg-boost-desktop.svg");
+        }
+
+
+
+        // ========================= Form
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+
+            .form-group {
+                width: 100%;
+                position: relative;
+
+                @media (min-width: 768px) {
+                    width: 77%;       
+                    // padding: 1rem;                 
+                }
+
+                @media (min-width: 1200px) {
+                    width: 80%;  
+                }
+
+
+                // ========================= Text input
+                .input {
+                    border-radius: 5px;
+                    outline: none;
+                    height: 55px;
+                    padding: 0 1rem;
+                    width: 100%;
+                    transition: all 0.25s ease-in-out;
+
+                    &:focus {
+                        border: 3px solid $cyan;
+                    }
+                }
+                .input-normal {
+                    border: none;
+                }
+
+
+                .input-error {
+                    border: 3px solid $light-red;
+                }
+
+
+
+                // Error message
+                p {
+                    position: absolute;
+                    color: $light-red;
+                    font-size: 14px;
+                    margin-top: 0.5rem;
+                }
+            }
+
+
+
+
+            // ========================= Submit btn
+            button {
+                background-color: $cyan;
+                color: $white;
+                font-weight: $fw-bold;
+                letter-spacing: 1px;
+                height: 47px;
+                margin-top: 2.5rem;
+                border-radius: 5px;
+                outline: none;
+                cursor: pointer;
+                transition: all 0.25s ease-in-out;
+
+                &:hover {
+                    background-color: lighten($cyan, 25%);
+                }
+
+                &:focus {
+                    background-color: lighten($cyan, 25%);
+                }
+
+                @media (min-width: 768px) {
+                    margin-top: 0;
+                    margin-left: 2rem;
+                    width: 23%;  
+                    height: 55px;
+                }
+
+                @media (min-width: 1200px) {
+                    width: 15%;  
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// ================================================================= Shortend links
+.interactive-shortend-links {
+    padding-top: 10rem;
+
+    @media (min-width: 768px) {
+        padding-top: 7rem;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 6.5rem;
+    }
+
+
+
+    // ========================= Container
+    .shortened-link-container {
+        background-color: $white;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        position: relative;
+        animation: fadeIn 0.5s ease-in-out;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+
+
+
+        // ========================= Header
+        h6 {
+            color: $very-dark-blue;
+            font-size: 14px;
+            padding: 1rem 3rem 1rem 1rem;
+            word-wrap: break-word;
+
+            @media (min-width: 768px) {
+                font-size: 15px;
+                padding: 1rem;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 15.5px;
+                padding: 1rem;
+            }
+        }
+
+
+
+        // ========================= Delete btn
+        .delete-btn {
+            background: transparent;
+            color: $gray;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+
+            &:hover {
+                color: $light-red;
+            }
+
+            &:focus {
+                color: $light-red;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 25px;
+                top: 22px;
+                right: 10px;
+            }
+        }
+
+
+
+        // ========================= Links details
+        .shortened-link-details {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            border-top: 1.5px solid $gray;
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-top: none;
+                margin-right: 2rem;
+            }
+
+
+
+            p {
+                color: $cyan;
+                font-size: 14px;
+
+                @media (min-width: 768px) {
+                    font-size: 15px;
+                }
+
+                @media (min-width: 1200px) {
+                    font-size: 15.5px;
+                }
+            }
+
+            .copy-btn {
+                color: $white;
+                font-size: 16px;
+                margin-top: 1rem;
+                padding: 0.6rem 0;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.25s ease-in-out;
+
+                @media (min-width: 768px) {
+                    margin-top: 0;
+                    margin-left: 1rem;
+                    padding: 0.5rem 2rem;
+                }
+            }
+
+            .not-copied-btn {
+                background-color: $cyan;
+                &:hover {
+                    background-color: lighten($cyan, 25%);
+                }
+
+                &:focus {
+                    background-color: lighten($cyan, 25%);
+                }
+            }
+
+
+            .copied-btn {
+                background-color: $very-dark-violet;
+                &:hover {
+                    background-color: lighten($very-dark-violet, 25%);
+                }
+
+                &:focus {
+                    background-color: lighten($very-dark-violet, 25%);
+                }
+            }
+        }
+    }
+}

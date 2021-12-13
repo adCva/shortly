@@ -1,0 +1,119 @@
+.footer-container {
+    text-align: center;
+    padding: 3rem 0;
+
+    @media (min-width: 768px) {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 4rem 0;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 4.5rem 0;
+    }
+
+
+
+    // ================== Logo. ==================
+    .logo-footer {
+        width: 110px;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(231deg) brightness(102%) contrast(103%);
+
+        @media (min-width: 1000px) {
+            width: 120px;
+        }
+    }
+
+
+
+    // ================== Links & Social. ==================
+    .footer-links-container {
+        @media (min-width: 768px) {
+            display: flex;
+        }
+
+
+
+        // ================== Links. ==================
+        .footer-links-group {
+            &:first-of-type {
+                margin-top: 2rem;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            @media (min-width: 768px) {
+                &:first-of-type {
+                    margin-top: 0;
+                }
+                align-items: flex-start;
+                margin: 0 2rem 0 0;
+            }
+
+            @media (min-width: 1200px) {
+                margin: 0 6rem 0 0;
+            }
+
+
+            h6 {
+                font-size: 16px;
+                margin-bottom: 1rem;
+            }
+
+            button {
+                background: transparent;
+                color: $gray;
+                border: none;
+                outline: none;
+                font-size: 15px;
+                margin-bottom: 0.6rem;
+                cursor: pointer;
+                transition: all 0.25s ease-in-out;
+
+                &:hover {
+                    color: $cyan;
+                }
+
+                &:focus {
+                    color: $cyan;
+                }
+
+
+                @media (min-width: 768px) {
+                    font-size: 14px;
+                    margin-bottom: 0.7rem;
+                }
+            }
+        }
+
+
+
+        // ================== Social. ==================
+        .footer-social-container {
+            a {
+                color: $white;
+                font-size: 22px;
+                margin-right: 1.5rem;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                transition: all 0.25s ease-in-out;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    color: $cyan;
+                }
+                &:focus {
+                    color: $cyan;
+                }
+            }
+        }
+    }
+}

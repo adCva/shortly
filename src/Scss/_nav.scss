@@ -1,0 +1,175 @@
+.nav-container {
+    //background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    position: relative;
+
+    @media (min-width: 768px) {
+        justify-content: flex-start;
+    }
+
+    .nav-logo {
+        width: 110px;
+    }
+
+    .mobile-btn {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: $gray;
+        font-size: 30px;
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
+
+
+    .nav-menu-container {
+        position: absolute;
+        top: 5rem;
+        background-color: $dark-violet;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 7px;
+        padding: 3rem 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+        @media (orientation: landscape) {
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            position: initial;
+            background-color: transparent;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: none;
+            padding: 0 1rem;
+            box-shadow: none;
+        }
+
+
+        .nav-group {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            @media (orientation: landscape) {
+                align-items: flex-start;
+            }
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                align-items: center;
+                width: auto;
+            }
+        }
+
+
+        .nav-menu {
+            &::after {
+                content: "";
+                display: block;
+                height: 1px;
+                width: 100%;
+                background-color: darken($gray, 40%);
+                margin: 0 0 2rem;
+            }
+
+            @media (orientation: landscape) {
+                &::after {
+                    content: none;
+                }
+            }
+
+            @media (min-width: 768px) {
+                &::after {
+                    content: none;
+                }
+            }
+        }
+
+
+        .menu-link {
+            background: transparent;
+            color: $white;
+            border: none;
+            outline: none;
+            font-weight: $fw-bold;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+            
+            &:hover {
+                color: $very-dark-violet;
+            }
+            &:focus {
+                color: $very-dark-violet;
+            }
+
+            @media (orientation: landscape) {
+                font-size: 16px;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            @media (min-width: 768px) {
+                color: $grayish-violet;
+                font-weight: $fw-medium;
+                font-size: 16px;
+                margin-bottom: 0;
+                margin-right: 1.5rem;
+            }
+            @media (min-width: 1000px) {
+                font-size: 15px;
+                margin-right: 2rem;
+            }
+        }
+
+
+        .btn-signUp {
+            background-color: $cyan;
+            color: $white;
+            border-radius: 50px;
+            outline: none;
+            border: none;
+            font-weight: $fw-bold;
+            letter-spacing: 1px;
+            padding: 0.9rem 0;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+
+            @media (orientation: landscape) {
+                padding: 0.6rem 2rem;
+            }
+
+            @media (min-width: 768px) {
+                font-weight: $fw-medium;
+                font-size: 15.5px;
+                padding: 0.45rem 1.1rem;
+            }
+
+            @media (min-width: 1000px) {
+                padding: 0.5rem 1.2rem;
+            }
+
+            &:hover {
+                background-color: lighten($cyan, 25%);
+            }
+
+            &:focus {
+                background-color: lighten($cyan, 25%);
+            }
+        }
+    }
+}

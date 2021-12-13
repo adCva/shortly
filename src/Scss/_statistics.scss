@@ -1,0 +1,158 @@
+.statistics-container {
+    margin-top: 7rem;
+
+    @media (min-width: 1200px) {
+        margin-top: 9rem;
+    }
+
+
+    
+    // ========================= Title container
+    .statistics-title {
+        text-align: center;
+
+
+        h3 {
+            color: $very-dark-blue;
+            font-size: 30px;
+            font-weight: $fw-bold;
+            margin-bottom: 1.5rem;
+
+            @media (min-width: 768px) {
+                font-size: 35px;
+            }
+
+            @media (min-width: 1000px) {
+                font-size: 38px;
+            }
+        }
+
+        p {
+            color: darken($gray, 5%);
+            line-height: 1.5;
+
+            @media (min-width: 768px) {
+                width: 500px;
+                margin: 0 auto;
+            }
+
+            @media (min-width: 1000px) {
+                font-size: 19px;
+            }
+        }
+    }
+
+
+
+
+    // ========================= Cards container
+    .statistics-card-container {
+        margin-top: 7rem;
+
+        @media (min-width: 1200px) {
+            display: flex;
+        }
+
+
+
+
+        // ========================= Card
+        .statistics-card {
+            position: relative;
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto 5rem;
+            padding: 1rem 2rem 2rem;
+            border-radius: 7px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+            &:after {
+                content: "";
+                height: 80px;
+                width: 5px;
+                background-color: $cyan;
+                position: absolute;
+                top: 100%;
+            }
+            &:last-of-type {
+                margin-bottom: 0;
+                &:after {
+                    content: none;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                align-items: flex-start;
+                text-align: left;
+                max-width: 350px;
+                height: 220px;
+                margin: 0 auto;
+
+                &:after {
+                    content: "";
+                    height: 5px;
+                    width: 80px;
+                    background-color: $cyan;
+                    position: absolute;
+                    top: 50%;
+                    left: 100%;
+                }
+                &:nth-child(even) {
+                    margin-top: 3rem;
+                }
+                &:last-of-type {
+                    margin-top: 6rem;
+                    margin-bottom: 0;
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+
+
+
+
+            // ========================= Card Img
+            .stats-img-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $dark-violet;
+                margin-top: -50px;
+                padding: 1rem;
+                border-radius: 50%;
+
+                img {
+                    width: 40px;
+                }
+
+                @media (min-width: 1200px) {
+                    img {
+                        width: 35px;
+                    }
+                }
+            }
+
+
+
+
+            // ========================= Card Text
+            h5 {
+                color: $very-dark-blue;
+                font-weight: $fw-bold;
+                font-size: 21px;
+                margin: 1.5rem 0 1rem;
+            }
+            
+            p {
+                color: darken($gray, 5%);
+                font-size: 16px;
+            }
+        }
+    }
+}
