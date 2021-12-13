@@ -918,13 +918,13 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 4rem 0;
+    padding: 4rem 0 2.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   .footer-container {
-    padding: 4.5rem 0;
+    padding: 4.5rem 0 3rem;
   }
 }
 
